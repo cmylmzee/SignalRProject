@@ -3,7 +3,7 @@
     public class Feature
     {
 
-        public int FutureId { get; set; }
+        public int FeatureId { get; set; }
 
         public string Title1 { get; set; }
 
