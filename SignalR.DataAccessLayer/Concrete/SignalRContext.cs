@@ -13,7 +13,7 @@ namespace SignalR.DataAccessLayer.Concrete
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;initial Catalog=SignalRDb;integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=localhost;initial Catalog=SignalRDb;integrated Security=true;TrustServerCertificate=True");
         }
 
         public DbSet<About> Abouts { get; set; }

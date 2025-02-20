@@ -22,4 +22,4 @@ namespace SignalR.DtoLayer.FeatureDto
         public string Description3 { get; set; }
     }
 }
-}
+

@@ -1,0 +1,20 @@
+﻿using AutoMapper;
+using SignalR.DtoLayer.BookingDto;
+using SignalR.EntityLayer.Entities;
+
+namespace SignalRApi.Mapping
+{
+    public class BookingMapping:Profile
+    {
+
+        public BookingMapping() {
+
+            CreateMap<Booking, ResultBookingDto>().ReverseMap(); // Reverse Map burada about resultaboutdto ile eşleştirilebilir hem de tam tersini sağlamak için
+            CreateMap<Booking, CreateBookingDto>().ReverseMap();
+            CreateMap<Booking, UpdateBookingDto>().ReverseMap();
+            CreateMap<Booking, GetBookingDto>().ReverseMap();
+
+        }
+       
+    }
+}

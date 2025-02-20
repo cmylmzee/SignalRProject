@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.DtoLayer.DiscountDto
 {
-    internal class GetDiscountDto
+    public class GetDiscountDto
     {
         public int DiscountId { get; set; }
 
